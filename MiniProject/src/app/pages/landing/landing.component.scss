@@ -46,7 +46,7 @@
   z-index: 1;
   display: flex;
   justify-content: flex-end;
-  background-color: #333;
+  background-color: black;
   overflow: hidden;
   position: sticky;
   top: 0;
@@ -68,6 +68,7 @@
 }
 
 .section {
+  scroll-margin-top: 50px; /* Adjust this to match the height of your navbar */
   padding: 20px;
   height: fit-content;
   background-color: #f2f2f2;
