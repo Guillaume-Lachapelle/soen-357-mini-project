@@ -5,18 +5,42 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingComponent } from './pages/landing/landing.component';
+import { IntroductionComponent } from './components/introduction/introduction.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { ProblemStatementComponent } from './components/problem-statement/problem-statement.component';
+import { ReferencesComponent } from './components/references/references.component';
+import { SolutionComponent } from './components/solution/solution.component';
+import { ResearchComponent } from './components/research/research.component';
+import { AnalysisComponent } from './components/analysis/analysis.component';
+import { VisualDesignComponent } from './components/visual-design/visual-design.component';
+import { FinalDesignComponent } from './components/final-design/final-design.component';
+import { ConclusionComponent } from './components/conclusion/conclusion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    IntroductionComponent,
+    ProblemStatementComponent,
+    ReferencesComponent,
+    SolutionComponent,
+    ResearchComponent,
+    AnalysisComponent,
+    VisualDesignComponent,
+    FinalDesignComponent,
+    ConclusionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatGridListModule,
+    MatToolbarModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
