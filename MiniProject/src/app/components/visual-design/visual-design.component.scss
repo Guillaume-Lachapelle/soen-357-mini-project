@@ -1,0 +1,23 @@
+p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.sketches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.sketches div {
+  display: flex; /* Add this line */
+  flex-direction: row; /* Change this line */
+}
+
+.sketches div img {
+  margin: 10px;
+  width: 50%;
+}
