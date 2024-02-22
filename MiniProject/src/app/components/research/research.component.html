@@ -1,1 +1,51 @@
-<p>research works!</p>
+<div class="survey">
+  <h2>Data Collection Method</h2>
+  <p>
+    We used a Google Form to collect the data. We made sure to target mostly the
+    elderly, but also asked a few candidates of younger age groups to contribute
+    to be able to compare the results. We asked questions about their age,
+    hobbies, COVID-19 opinions, and more.
+  </p>
+</div>
+
+<div>
+  <h2>Results</h2>
+  <div class="arrange">
+    <mat-card>
+      <canvasjs-chart [options]="chartOptionsAge"></canvasjs-chart>
+    </mat-card>
+
+    <mat-card>
+      <canvasjs-chart [options]="chartOptionsMarital"></canvasjs-chart>
+    </mat-card>
+
+    <mat-card>
+      <canvasjs-chart [options]="chartOptionsLike"></canvasjs-chart>
+    </mat-card>
+
+    <mat-card>
+      <canvasjs-chart [options]="chartOptionsComfort"></canvasjs-chart>
+    </mat-card>
+  </div>
+</div>
+
+<div class="question">
+  <div *ngFor="let q of Questions">
+    <h2>
+      {{ q.question }}
+    </h2>
+
+    <div class="answers">
+      <div
+        class="animated-border-quote"
+        *ngFor="let answers of q.answers; let i = index"
+      >
+        <blockquote>
+          <p>
+            {{ answers }}
+          </p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
