@@ -17,6 +17,10 @@ import { AnalysisComponent } from './components/analysis/analysis.component';
 import { VisualDesignComponent } from './components/visual-design/visual-design.component';
 import { FinalDesignComponent } from './components/final-design/final-design.component';
 import { ConclusionComponent } from './components/conclusion/conclusion.component';
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+
+
+
 
 @NgModule({
   declarations: [
@@ -39,6 +43,7 @@ import { ConclusionComponent } from './components/conclusion/conclusion.componen
     MatCardModule,
     MatGridListModule,
     MatToolbarModule,
+    CanvasJSAngularChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

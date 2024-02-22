@@ -1,8 +1,48 @@
+<div class="arrange">
+  <mat-card>
+    <canvasjs-chart [options]="chartOptionsAge"></canvasjs-chart>
+  </mat-card>
+
+  <mat-card>
+    <canvasjs-chart [options]="chartOptionsMarital"></canvasjs-chart>
+  </mat-card>
+
+  <mat-card>
+    <canvasjs-chart [options]="chartOptionsLike"></canvasjs-chart>
+  </mat-card>
+
+  <mat-card>
+    <canvasjs-chart [options]="chartOptionsComfort"></canvasjs-chart>
+  </mat-card>
+</div>
+
 <div>
   <h2>User Personas</h2>
   <div class="persona">
-    <img src="assets/User_Persona_1.png" alt="Elderly" />
-    <img src="assets/User_Persona_2.png" alt="Elderly" />
+    <div class="sparkle u-hover--sparkle">
+      <img src="assets/User_Persona_1.png" alt="Elderly" />
+    </div>
+    <div class="sparkle u-hover--sparkle">
+      <img src="assets/User_Persona_2.png" alt="Elderly" />
+    </div>
   </div>
 </div>
 
+<div class="question">
+  <div *ngFor="let q of Questions">
+    <h2>
+ {{ q.question }}
+    </h2>
+
+    <div class="answers" >
+      <div class="animated-border-quote" *ngFor="let answers of q.answers; let i = index">
+        <blockquote>
+          <p>
+            {{answers}}
+
+          </p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
