@@ -3,6 +3,13 @@ $c-background: #e3e4db;
 $c-text: #000000;
 $bg: #f2f2f2;
 
+p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.4;
+}
+
 .persona {
   display: flex;
   flex-direction: column;
