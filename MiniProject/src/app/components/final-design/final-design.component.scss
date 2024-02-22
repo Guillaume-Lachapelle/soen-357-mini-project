@@ -1,0 +1,15 @@
+.finalDesign {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto; /* Center the element horizontally */
+}
+
+.finalDesign img {
+  width: 95%; /* Make the images smaller */
+  height: 95%; /* Make the images smaller */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a small shadow */
+}
