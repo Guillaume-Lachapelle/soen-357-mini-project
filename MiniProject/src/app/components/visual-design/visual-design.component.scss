@@ -35,5 +35,19 @@ p {
 .prototypes img {
   width: 95%; /* Make the images smaller */
   height: 95%; /* Make the images smaller */
+}
 
+.wireframes {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto; /* Center the element horizontally */
+}
+
+.wireframes img {
+  width: 95%; /* Make the images smaller */
+  height: 95%; /* Make the images smaller */
 }

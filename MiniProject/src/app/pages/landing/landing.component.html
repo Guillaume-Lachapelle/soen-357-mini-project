@@ -1,18 +1,59 @@
 <div>
   <div class="navbar">
-    <a href="#Introduction">Introduction</a>
-    <a href="#Problem">Problem</a>
-    <a href="#Solution">Solution</a>
-    <a href="#Research">Research</a>
-    <a href="#Analysis">Analysis</a>
-    <a href="#VisualDesign">Visual Design</a>
-    <a href="#FinalDesign">Final Design</a>
-    <a href="#Conclusion">Conclusion</a>
+    <div class="appName">
+      <h1>BrainFit</h1>
+    </div>
+    <div class="nav-links desktop">
+      <a href="#Introduction">Introduction</a>
+      <a href="#Problem">Problem</a>
+      <a href="#Solution">Solution</a>
+      <a href="#Research">Research</a>
+      <a href="#Analysis">Analysis</a>
+      <a href="#UserFlow">User Flow</a>
+      <a href="#VisualDesign">Visual Design</a>
+      <a href="#FinalDesign">Final Design</a>
+      <a href="#Conclusion">Conclusion</a>
+    </div>
+    <div class="nav-links mobile">
+      <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <a href="#Introduction">Introduction</a>
+        </button>
+        <button mat-menu-item>
+          <a href="#Problem">Problem</a>
+        </button>
+        <button mat-menu-item>
+          <a href="#Solution">Solution</a>
+        </button>
+        <button mat-menu-item>
+          <a href="#Research">Research</a>
+        </button>
+        <button mat-menu-item>
+          <a href="#Analysis">Analysis</a>
+        </button>
+        <button mat-menu-item>
+          <a href="#UserFlow">User Flow</a>
+        </button>
+        <button mat-menu-item>
+          <a href="#VisualDesign">Visual Design</a>
+        </button>
+        <button mat-menu-item>
+          <a href="#FinalDesign">Final Design</a>
+        </button>
+        <button mat-menu-item>
+          <a href="#Conclusion">Conclusion</a>
+        </button>
+      </mat-menu>
+    </div>
   </div>
 
   <div class="intro">
     <div class="text">
-      <h1>Designing for the Elderly</h1>
+      <h1>BrainFit</h1>
+      <h2>Designing for the Elderly</h2>
       <p>Guillaume Lachapelle - 40203325</p>
       <p>Oliver Vilney - 40214948</p>
       <p>Karina Sanchez Duran - 40189860</p>
@@ -49,6 +90,11 @@
   <div id="Analysis" class="section">
     <h1>Analysis</h1>
     <app-analysis></app-analysis>
+  </div>
+
+  <div id="UserFlow" class="section">
+    <h1>User Flow</h1>
+    <app-user-flow></app-user-flow>
   </div>
 
   <div id="VisualDesign" class="section">

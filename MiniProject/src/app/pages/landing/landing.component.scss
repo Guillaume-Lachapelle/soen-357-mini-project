@@ -20,9 +20,15 @@
   line-height: 1.4;
 }
 
+.intro .text h2 {
+  margin: 10px 0 20px 0;
+  font-size: 2.2em;
+  line-height: 1.4;
+}
+
 .intro .text p {
   margin: 10px 0;
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.4;
 }
 
@@ -43,26 +49,66 @@
 }
 
 .navbar {
-  z-index: 1;
   display: flex;
-  justify-content: flex-end;
-  background-color: black;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; // Dark background
+  padding: 10px;
 
-  a {
-    float: left;
-    display: block;
+  .appName {
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.5em;
+  }
 
-    &:hover {
-      background-color: #ddd;
-      color: black;
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: #ccc; // Light gray links
+      text-decoration: none;
+      margin: 0 10px;
+
+      &:hover {
+        color: #fff; // White color on hover
+      }
+    }
+  }
+
+  .nav-links.mobile {
+    display: none;
+
+    button {
+      color: #ccc; // Light gray button
+      margin-right: 10px;
+
+      &:hover {
+        color: #fff; // White color on hover
+      }
+    }
+
+    mat-menu {
+      background-color: #333; // Dark background
+
+      button mat-menu-item a {
+        color: #ccc; // Light gray links
+        text-decoration: none;
+        margin: 0 10px;
+
+        &:hover {
+          color: #fff; // White color on hover
+        }
+      }
+    }
+  }
+
+  @media (max-width: 976px) {
+    .nav-links.desktop {
+      display: none;
+    }
+
+    .nav-links.mobile {
+      display: flex;
     }
   }
 }

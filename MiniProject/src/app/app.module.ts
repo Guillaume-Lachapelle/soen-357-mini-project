@@ -18,9 +18,9 @@ import { VisualDesignComponent } from './components/visual-design/visual-design.
 import { FinalDesignComponent } from './components/final-design/final-design.component';
 import { ConclusionComponent } from './components/conclusion/conclusion.component';
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
-
-
-
+import { UserFlowComponent } from './components/user-flow/user-flow.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -35,6 +35,7 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
     VisualDesignComponent,
     FinalDesignComponent,
     ConclusionComponent,
+    UserFlowComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +45,8 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
     MatGridListModule,
     MatToolbarModule,
     CanvasJSAngularChartsModule,
+    MatIconModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
