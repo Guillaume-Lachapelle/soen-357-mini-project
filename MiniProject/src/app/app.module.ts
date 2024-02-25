@@ -21,6 +21,7 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 import { UserFlowComponent } from './components/user-flow/user-flow.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { BackgroundResearchComponent } from './components/background-research/background-research.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { MatMenuModule } from '@angular/material/menu';
     FinalDesignComponent,
     ConclusionComponent,
     UserFlowComponent,
+    BackgroundResearchComponent,
   ],
   imports: [
     BrowserModule,

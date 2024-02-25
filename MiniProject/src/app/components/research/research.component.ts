@@ -137,7 +137,7 @@ export class ResearchComponent {
         "Énormement! L'anxiété des gens a augmenté en flèche, et il y a plus d'isolement vu lampeur de contamination donc les gens vont plus sur les reseaux sociaux, ce qui cause des debordements et augmente la detresse",
         "It has made me less tolerant of other people's ignorance.",
         'People are more isolated',
-        'Complicated navigation and updates',
+        'Negatively because people have become more isolated. People and friends have gotten into the habit of staying home. Clubs have lost members.',
       ],
     },
 
